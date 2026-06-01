@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Privacy policy for dannylaw.dev and its subdomains.">
+  <title>Privacy — dannylaw.dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page legal">
+
+  <a class="back-link" href="/"><span class="arrow">→</span> Back to dannylaw.dev</a>
+
+  <header class="legal-head">
+    <h1>Privacy Policy</h1>
+    <p class="legal-sub">How the websites at <code>dannylaw.dev</code> and its subdomains handle your data. These are personal, hobby projects built and run by one person — this policy is written plainly to match.</p>
+    <div class="legal-meta">
+      <span>Last updated: 1 June 2026</span>
+      <span>Controller: Danny Lawrence</span>
+      <span>Jurisdiction: United Kingdom</span>
+    </div>
+  </header>
+
+  <h2>The short version</h2>
+  <div class="legal-note">
+    <strong>No analytics, no tracking, no advertising, and no first-party cookies</strong> run on any of these sites. Most of them collect nothing about you at all. The one that stores real data is the inspection app, which is a personal work tool you have to sign into. Where a site does send data anywhere, it's spelled out in the table below.
+  </div>
+
+  <h2>Who runs these sites</h2>
+  <p>I'm Danny Lawrence, an individual in the United Kingdom. I build and run these sites in my spare time. For anything in this policy — including any data request — contact me at <a href="mailto:dannylaw.dev@gmail.com">dannylaw.dev@gmail.com</a>. I am the data controller for the personal data described here.</p>
+
+  <h2>What this policy covers</h2>
+  <p>This policy applies to the websites I operate on the <code>dannylaw.dev</code> domain. They differ a lot in what they do, so the table below describes each one honestly. Two of them (<code>os</code> and <code>workshop</code>) are private tools gated behind an access check and used only by me — they aren't open to the public.</p>
+
+  <div class="legal-table-wrap">
+    <table class="legal-table">
+      <thead>
+        <tr>
+          <th>Site</th>
+          <th>What it is</th>
+          <th>What it collects from you</th>
+          <th>Stored where</th>
+          <th>Shared with</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>dannylaw.dev</code></td>
+          <td>This portfolio page</td>
+          <td>Nothing — no forms, no logins, no scripts that collect data</td>
+          <td>Nothing stored</td>
+          <td>Google Fonts (sees your IP when fonts load)</td>
+        </tr>
+        <tr>
+          <td><code>inspection.<wbr>dannylaw.dev</code></td>
+          <td>A personal scheduling / equipment-inspection work tool (account required)</td>
+          <td>Your sign-in email; the inspection and timing data you enter; the email addresses of anyone you grant viewer or preparer access to</td>
+          <td>Google Firestore (stored in Europe) and your own browser's local storage</td>
+          <td>Google (hosting, sign-in, database). If you choose to connect Google Sheets, data you send goes to your own Google spreadsheet with your explicit consent</td>
+        </tr>
+        <tr>
+          <td><code>spares.<wbr>dannylaw.dev</code></td>
+          <td>A label-printing helper</td>
+          <td>The label text you type</td>
+          <td>Your browser's local storage only — nothing is sent anywhere</td>
+          <td>No one</td>
+        </tr>
+        <tr>
+          <td><code>wexley.<wbr>dannylaw.dev</code></td>
+          <td>An experimental chat-robot toy</td>
+          <td>The chat messages you type, plus a random throwaway session ID</td>
+          <td>Not stored on this site; sent to a third-party automation service and an AI model to generate replies</td>
+          <td>An n8n automation workflow and the AI model behind it. <strong>Treat it like an open chat room — don't type anything private.</strong> I can't see or control what those services log</td>
+        </tr>
+        <tr>
+          <td><code>os.<wbr>dannylaw.dev</code><br><code>workshop.<wbr>dannylaw.dev</code></td>
+          <td>Private development tools, for my use only</td>
+          <td>Not open to the public; access is gated by a sign-in check (Cloudflare Access). They process my own project data, not visitors'</td>
+          <td>Server / my own browser</td>
+          <td>Cloudflare (access gate); otherwise no one</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>Other subdomains may be listed as "in progress" on the home page (for example games or D&amp;D tools). They aren't live yet; when one launches with anything that collects data, this policy will be updated to cover it.</p>
+
+  <h2>Cookies and local storage</h2>
+  <p><strong>None of these sites set first-party cookies, and none run tracking or analytics cookies.</strong> So there's no cookie-consent banner — there's nothing non-essential to consent to.</p>
+  <p>Some sites use your browser's <strong>local storage</strong> to function — for example, the inspection app keeps your working data on your device, and the spares tool remembers your label inputs. This is strictly necessary for those tools to work, and the data stays in your browser unless described otherwise above.</p>
+  <p>Third parties may set their own cookies when you use a feature that involves them — Google when you sign in or connect Google Sheets, and Cloudflare when it gates access to the private tools. Those cookies are governed by <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google's</a> and <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener" target="_blank">Cloudflare's</a> own privacy policies.</p>
+
+  <h2>The services that process data for me</h2>
+  <p>I don't have my own servers for most of this — these tools rely on a few third-party providers acting as processors:</p>
+  <ul>
+    <li><strong>Google (Firebase / Firestore, Hosting, Sign-in, Sheets, Fonts)</strong> — hosts the sites, runs sign-in for the inspection app, and stores the app's data. The app's database is configured to store data in Europe. Google is a global company and may process data outside the UK under its own legal safeguards.</li>
+    <li><strong>Cloudflare</strong> — handles DNS for the domain and the access gate on the private tools.</li>
+    <li><strong>jsDelivr and cdnjs</strong> — content-delivery networks that serve some code libraries; they see your IP address when a page loads those files.</li>
+    <li><strong>n8n and an AI model provider</strong> — only for the <code>wexley</code> chat toy, which sends your messages to them to generate replies.</li>
+  </ul>
+
+  <h2>Why I'm allowed to process this data (legal basis)</h2>
+  <ul>
+    <li><strong>The inspection app:</strong> it's my own tool and I'm its main user — processing is on the basis of legitimate interests in running it. Where it stores another person's email (a manager/viewer or preparer you invite), that rests on legitimate interests and on their choosing to use it.</li>
+    <li><strong>Connecting Google Sheets:</strong> your explicit consent, given through Google's permission screen. You can disconnect at any time.</li>
+    <li><strong>The wexley chat:</strong> your consent, given by choosing to send a message.</li>
+  </ul>
+
+  <h2>How long data is kept</h2>
+  <p>Inspection-app data is kept until you delete it; archived days are retained as history until removed. Anything in your browser's local storage stays until you clear it. Wexley chat messages aren't stored by the site, though the third-party services it calls may keep their own logs under their policies.</p>
+
+  <h2>Your rights</h2>
+  <p>Under UK GDPR you have the right to access the personal data held about you, to correct it, to have it deleted, to restrict or object to its processing, and to data portability. To exercise any of these, email <a href="mailto:dannylaw.dev@gmail.com">dannylaw.dev@gmail.com</a>.</p>
+  <p>For the inspection app specifically: you can export your data from within the app, and I can delete your account and its stored data on request. You can also clear the on-device data yourself by clearing your browser storage for the site.</p>
+  <p>If you think your data has been mishandled, you can complain to the UK's Information Commissioner's Office (<a href="https://ico.org.uk/" rel="noopener" target="_blank">ico.org.uk</a>).</p>
+
+  <h2>Children</h2>
+  <p>These sites aren't directed at children and aren't intended for use by anyone under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the "last updated" date above will change with it. Material changes to a site that collects data will be reflected here before or when they go live.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or requests: <a href="mailto:dannylaw.dev@gmail.com">dannylaw.dev@gmail.com</a>. See also the <a href="/terms.html">Terms &amp; Disclaimer</a>.</p>
+
+  <footer>
+    <span>© 2026 Danny Lawrence</span>
+    <span class="footer-links">
+      <a href="/">Home</a>
+      <a href="/terms.html">Terms</a>
+    </span>
+  </footer>
+
+</div>
+</body>
+</html>
