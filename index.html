@@ -3,152 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Danny Lawrence — a workshop for software made on the side. Games, tools, and creative web apps.">
-  <title>Danny Lawrence — Workshop</title>
+  <meta name="description" content="Danny Lawrence — personal workshop. Software built on the side: tools, toys, and games.">
+  <title>dannylaw.dev — workshop</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="page">
+<main class="deck">
 
-  <!-- =========================================================
-       HERO — name, tagline, one-line about
-       ========================================================= -->
-  <header class="hero">
-    <h1>Danny Lawrence</h1>
-    <p class="hero-tagline">A workshop for software made on the side.</p>
-    <p class="hero-about">Games, tools, and creative web apps — built between retail shifts and D&amp;D sessions.</p>
+  <!-- HEADER -->
+  <header class="deck-head">
+    <div>
+      <div class="brand">dannylaw.dev<span class="blink">_</span></div>
+      <div class="tagline">// software built on the side — tools, toys, games</div>
+    </div>
+    <span class="status-chip"><span class="dot live"></span> online</span>
   </header>
 
-  <!-- =========================================================
-       WORKSHOP STATUS — single-row indicator linking to os.dannylaw.dev
-       ========================================================= -->
-  <section class="status-bar" aria-label="Workshop status">
-    <div class="status-bar-info">
-      <span class="pill pill-green">online</span>
-      <span class="status-bar-text"><strong>Workshop</strong> · personal cloud dev environment</span>
-    </div>
-    <a class="status-bar-link" href="https://os.dannylaw.dev">
-      os.dannylaw.dev <span class="arrow">→</span>
-      <span class="status-bar-tag">private</span>
-    </a>
-  </section>
+  <!-- LIVE -->
+  <section class="section">
+    <div class="section-label">Live <span class="section-count">4</span></div>
+    <div class="grid">
 
-  <!-- =========================================================
-       PROJECTS — vertical list, each row: title, status, desc, tech, url
-       ========================================================= -->
-  <section class="section" id="projects">
-    <div class="section-head">
-      <h2>Projects</h2>
-      <span class="meta">05</span>
-    </div>
-    <div class="project-list">
-
-      <!-- RSKingdoms -->
-      <article class="project-row">
-        <div class="project-row-head">
-          <span class="project-row-title">RSKingdoms</span>
-          <span class="pill pill-amber">in progress</span>
+      <a class="tile" href="https://inspection.dannylaw.dev" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <span class="tile-name">Day Allocation</span>
+          <span class="dot live" aria-label="live"></span>
         </div>
-        <p class="project-row-desc">Firebase multiplayer adaptation of the RuneScape Kingdoms board game. Lobby, parties, turn system, and regions are all working — currently building the world map and quest system.</p>
-        <div class="project-row-foot">
-          <div class="tech"><span>React</span><span>TypeScript</span><span>Firestore</span></div>
-          <span class="row-link is-disabled" title="Coming soon — rs.dannylaw.dev">rs.dannylaw.dev <span class="arrow">→</span></span>
-        </div>
-      </article>
-
-      <!-- DND Unlimited -->
-      <article class="project-row">
-        <div class="project-row-head">
-          <span class="project-row-title">DND Unlimited</span>
-          <span class="pill pill-amber">in progress</span>
-        </div>
-        <p class="project-row-desc">Campaign management app for my homebrew D&amp;D world, Irelias. Character sheets, story bibles, and world-building tools in one place.</p>
-        <div class="project-row-foot">
-          <div class="tech"><span>React</span><span>TypeScript</span><span>Vite</span><span>Zustand</span><span>Firebase</span></div>
-          <span class="row-link is-disabled" title="Coming soon — dnd.dannylaw.dev">dnd.dannylaw.dev <span class="arrow">→</span></span>
-        </div>
-      </article>
-
-      <!-- Day Allocation Tracker -->
-      <article class="project-row">
-        <div class="project-row-head">
-          <span class="project-row-title">Day Allocation Tracker</span>
-          <span class="pill pill-green">live</span>
-        </div>
-        <p class="project-row-desc">Work tool I built for myself at Wex — paces my day of equipment inspections, tracks time per item, and surfaces workload changes to my manager via a read-only viewer mode. Drift handling, lunch/meeting templates, an item library, a Firebase sync layer, and a Google Sheets integration. ~23k lines of vanilla JS, no build step. Used daily.</p>
-        <div class="project-row-foot">
-          <div class="tech"><span>HTML</span><span>JavaScript</span><span>Firebase</span></div>
-          <a class="row-link" href="https://inspection.dannylaw.dev" target="_blank" rel="noopener">inspection.dannylaw.dev <span class="arrow">→</span></a>
-        </div>
-      </article>
-
-      <!-- Prompt Atelier -->
-      <article class="project-row">
-        <div class="project-row-head">
-          <span class="project-row-title">Prompt Atelier</span>
-          <span class="pill pill-amber">in progress</span>
-        </div>
-        <p class="project-row-desc">A web app that takes casual requests and refines them into well-structured prompts for Claude. Editorial paper-and-ink aesthetic. Uses the Anthropic API with prompt caching.</p>
-        <div class="project-row-foot">
-          <div class="tech"><span>React</span><span>Anthropic API</span></div>
-          <span class="row-link is-disabled" title="Coming soon — atelier.dannylaw.dev">atelier.dannylaw.dev <span class="arrow">→</span></span>
-        </div>
-      </article>
-
-      <!-- Captain Rheagar -->
-      <article class="project-row">
-        <div class="project-row-head">
-          <span class="project-row-title">Captain Rheagar</span>
-          <span class="pill pill-green">live</span>
-        </div>
-        <p class="project-row-desc">Standalone character sheet for my main D&amp;D character. Will fold into DND Unlimited eventually.</p>
-        <div class="project-row-foot">
-          <div class="tech"><span>React</span></div>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- =========================================================
-       ABOUT — three short paragraphs
-       ========================================================= -->
-  <section class="section about" id="about">
-    <div class="section-head">
-      <h2>About</h2>
-    </div>
-    <p>I build software in my spare time — games, tools, and creative web apps. By day I work in retail at <strong>Wex</strong>, a UK photo and video shop, where I also build internal tools to make our workflows less painful.</p>
-    <p>Outside work I run D&amp;D campaigns and build the things they need. Most of what's in the workshop right now is D&amp;D-adjacent — campaign companions, character sheets, world-building tools.</p>
-    <p>The workshop itself is a personal cloud dev environment — a Hetzner VM running code-server in the browser, Caddy reverse-proxying everything, and every project deploying itself on push to <code>main</code>. The point isn't the infra; the point is shipping small things often.</p>
-  </section>
-
-  <!-- =========================================================
-       LINKS — GitHub, email, workshop
-       ========================================================= -->
-  <section class="section" id="links">
-    <div class="section-head">
-      <h2>Links</h2>
-    </div>
-    <div class="contact">
-      <a href="https://github.com/DannyLaw-dev" rel="me">
-        GitHub <span class="arrow">→</span>
+        <p class="tile-desc">Paces my day of equipment inspections at Wex — timing, drift, viewer mode for my manager.</p>
+        <span class="tile-go"><span class="host">inspection.dannylaw.dev</span> <span class="arr">→</span></span>
       </a>
-      <a href="mailto:dannylaw.dev@gmail.com" class="primary">
-        Email <span class="arrow">→</span>
+
+      <a class="tile" href="https://spares.dannylaw.dev" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <span class="tile-name">Spares</span>
+          <span class="dot live" aria-label="live"></span>
+        </div>
+        <p class="tile-desc">Quick printable labels for equipment spare parts. Local-only, no accounts.</p>
+        <span class="tile-go"><span class="host">spares.dannylaw.dev</span> <span class="arr">→</span></span>
       </a>
-      <a href="https://os.dannylaw.dev" class="quiet">
-        Workshop <span class="arrow">→</span>
-        <span class="link-tag">private</span>
+
+      <a class="tile" href="https://wexley.dannylaw.dev" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <span class="tile-name">Wexley</span>
+          <span class="dot live" aria-label="live"></span>
+        </div>
+        <p class="tile-desc">An animated chat-robot toy. Talks back via an n8n + LLM brain. Just for fun.</p>
+        <span class="tile-go"><span class="host">wexley.dannylaw.dev</span> <span class="arr">→</span></span>
       </a>
+
+      <a class="tile" href="https://meal-picker-c1d4e.web.app" target="_blank" rel="noopener">
+        <div class="tile-top">
+          <span class="tile-name">Meal Picker</span>
+          <span class="dot live" aria-label="live"></span>
+        </div>
+        <p class="tile-desc">Swipe-to-decide dinner for two. Shared household, matches when you both say yes.</p>
+        <span class="tile-go"><span class="host">meal-picker · web.app</span> <span class="arr">→</span></span>
+      </a>
+
     </div>
   </section>
 
-  <!-- =========================================================
-       FOOTER
-       ========================================================= -->
+  <!-- BUILDING -->
+  <section class="section">
+    <div class="section-label">Building <span class="section-count">4</span></div>
+    <div class="rows">
+      <div class="row">
+        <span class="dot build"></span>
+        <span class="r-name">RSKingdoms</span>
+        <span class="r-desc">Firebase multiplayer adaptation of the RuneScape Kingdoms board game.</span>
+        <span class="r-tag">in progress</span>
+      </div>
+      <div class="row">
+        <span class="dot build"></span>
+        <span class="r-name">DND Unlimited</span>
+        <span class="r-desc">Campaign manager for my homebrew world — sheets, story bibles, world-building.</span>
+        <span class="r-tag">in progress</span>
+      </div>
+      <div class="row">
+        <span class="dot build"></span>
+        <span class="r-name">Prompt Atelier</span>
+        <span class="r-desc">Refines casual requests into well-structured prompts. Uses the Anthropic API.</span>
+        <span class="r-tag">in progress</span>
+      </div>
+      <div class="row">
+        <span class="dot build"></span>
+        <span class="r-name">Kit Register</span>
+        <span class="r-desc">Shared kit inventory + checkout for a small production team.</span>
+        <span class="r-tag">early</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKSHOP -->
+  <section class="section">
+    <div class="section-label">Workshop <span class="section-count">private</span></div>
+    <div class="rows">
+      <a class="row" href="https://os.dannylaw.dev" target="_blank" rel="noopener">
+        <span class="dot idle"></span>
+        <span class="r-name">os.dannylaw.dev</span>
+        <span class="r-desc">Personal cloud dev environment — code-server on a Hetzner VM.</span>
+        <span class="r-tag">private →</span>
+      </a>
+      <div class="row">
+        <span class="dot idle"></span>
+        <span class="r-name">Dashboard</span>
+        <span class="r-desc">Project status board for the workshop. Run on-demand.</span>
+        <span class="r-tag">internal</span>
+      </div>
+      <div class="row">
+        <span class="dot idle"></span>
+        <span class="r-name">Serial OCR</span>
+        <span class="r-desc">Prototype: read equipment serial numbers from a phone camera, on-device.</span>
+        <span class="r-tag">prototype</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <p>I build software in my spare time — small, useful things, shipped often. By day I'm in retail at <strong>Wex</strong>, a UK photo &amp; video shop, where I also build internal tools to make the work less painful.</p>
+    <p>The rest is games and D&amp;D-adjacent toys. The whole lot runs out of a personal cloud workshop, deploying itself on push to <code>main</code>.</p>
+  </section>
+
+  <!-- LINKS -->
+  <div class="links">
+    <a href="https://github.com/DannyLaw-dev" rel="me" target="_blank">GitHub →</a>
+    <a href="mailto:dannylaw.dev@gmail.com">Email →</a>
+  </div>
+
+  <!-- FOOTER -->
   <footer>
     <span>© 2026 Danny Lawrence</span>
     <span class="footer-links">
@@ -157,6 +143,6 @@
     </span>
   </footer>
 
-</div>
+</main>
 </body>
 </html>
